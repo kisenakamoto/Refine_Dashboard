@@ -6,11 +6,11 @@ import { ChatBubble, Delete, Edit, Phone, Place, Star } from '@mui/icons-materia
 
 import { CustomButton } from 'components';
 
-// function checkImage(url: any) {
-//   let img = new Image();
-//   img.src = url;
-//   return img.width !== 0 && img.height !== 0;
-// }
+function checkImage(url: any) {
+  let img = new Image();
+  img.src = url;
+  return img.width !== 0 && img.height !== 0;
+}
 
 const PropertyDetails = () => {
   const navigate = useNavigate();
@@ -31,21 +31,21 @@ const PropertyDetails = () => {
     return <div>Something went wrong!</div>;
   }
 
-//   const isCurrentUser = user.email === propertyDetails.creator.email;
+  const isCurrentUser = user.email === propertyDetails.creator.email;
 
-//   const handleDeleteProperty = () => {
-//     const response = confirm('Are you sure you want to delete this property?');
-//     if (response) {
-//       mutate({
-//         resource: 'properties',
-//         id: id as string,
-//       }, {
-//         onSuccess: () => {
-//           navigate('/properties');
-//         },
-//       });
-//     }
-//   };
+  const handleDeleteProperty = () => {
+    const response = confirm('Are you sure you want to delete this property?');
+    if (response) {
+      mutate({
+        resource: 'properties',
+        id: id as string,
+      }, {
+        onSuccess: () => {
+          navigate('/properties');
+        },
+      });
+    }
+  };
 
   return (
     <Box
@@ -87,7 +87,7 @@ const PropertyDetails = () => {
               <Box>
                 <Typography fontSize={16} fontWeight={600} mt="10px" color="#11142D">Price</Typography>
                 <Stack direction="row" alignItems="flex-end" gap={1}>
-                  <Typography fontSize={25} fontWeight={700} color="#475BE8">${propertyDetails.price}</Typography>
+                  <Typography fontSize={25} fontWeight={700} color="#475BE8">₱{propertyDetails.price}</Typography>
                   <Typography fontSize={14} color="#808191" mb={0.5}>for one day</Typography>
                 </Stack>
               </Box>
@@ -115,7 +115,7 @@ const PropertyDetails = () => {
 
             <Stack mt={2} justifyContent="center" alignItems="center" textAlign="center">
               <img
-                // src={checkImage(propertyDetails.creator.avatar) ? propertyDetails.creator.avatar : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png"}
+                src={checkImage(propertyDetails.creator.avatar) ? propertyDetails.creator.avatar : "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png"}
                 alt="avatar"
                 width={90}
                 height={90}
@@ -136,7 +136,7 @@ const PropertyDetails = () => {
             </Stack>
 
             <Stack width="100%" mt="25px" direction="row" flexWrap="wrap" gap={2}>
-              {/* <CustomButton
+              <CustomButton
                 title={!isCurrentUser ? 'Message' : 'Edit'}
                 backgroundColor="#475BE8"
                 color="#FCFCFC"
@@ -147,8 +147,8 @@ const PropertyDetails = () => {
                     navigate(`/properties/edit/${propertyDetails._id}`);
                   }
                 }}
-              /> */}
-              {/* <CustomButton
+              />
+              <CustomButton
                 title={!isCurrentUser ? 'Call' : 'Delete'}
                 backgroundColor={!isCurrentUser ? '#2ED480' : '#d42e2e'}
                 color="#FCFCFC"
@@ -157,7 +157,7 @@ const PropertyDetails = () => {
                 handleClick={() => {
                   if (isCurrentUser) handleDeleteProperty();
                 }}
-              /> */}
+              />
             </Stack>
           </Stack>
 
