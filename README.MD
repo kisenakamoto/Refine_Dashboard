@@ -1,4 +1,4 @@
-# client
+# Nakamoto Properties Dashboard
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
@@ -8,6 +8,8 @@
 <br/>
 
 This [refine](https://github.com/pankod/refine) project was generated with [superplate](https://github.com/pankod/refine).
+
+Live site: https://nakamoto-dashboard.netlify.app/
 
 ## Getting Started
 
