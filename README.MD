@@ -1,5 +1,11 @@
 # Nakamoto Properties Dashboard
 
+Live site: https://nakamoto-dashboard.netlify.app/
+
+![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/b5ae4f43-00af-4637-85bd-873feaf6136f)
+![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/82bfb815-c9ec-48a9-b6e6-c710fa64f1d6)
+![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/3bebc917-de2a-4021-909f-7fd069369699)
+
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
     <img src="https://refine.ams3.cdn.digitaloceanspaces.com/refine_logo.png"  align="center" />
@@ -8,14 +14,6 @@
 <br/>
 
 This [refine](https://github.com/pankod/refine) project was generated with [superplate](https://github.com/pankod/refine).
-
-Live site: https://nakamoto-dashboard.netlify.app/
-
-![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/b5ae4f43-00af-4637-85bd-873feaf6136f)
-![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/82bfb815-c9ec-48a9-b6e6-c710fa64f1d6)
-![image](https://github.com/kisenakamoto/Refine_Dashboard/assets/42840796/3bebc917-de2a-4021-909f-7fd069369699)
-
-
 
 ## Getting Started
 
